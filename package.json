@@ -4,11 +4,14 @@
   "private": true,
   "dependencies": {
     "bulma": "^0.7.1",
+    "file-type": "^8.0.0",
+    "filepond-plugin-file-validate-type": "^1.1.0",
     "filepond-plugin-image-preview": "^1.0.9",
     "firebase": "^5.0.4",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-filepond": "^2.0.6",
+    "react-native-file-type": "0.0.2",
     "react-scripts": "1.1.4"
   },
   "scripts": {
