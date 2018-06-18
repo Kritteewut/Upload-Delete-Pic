@@ -35,7 +35,7 @@ class App extends Component {
 
     this.state = {
       files: [], //ใช้เก็บข้อมูล File ที่ Upload
-      uploadValue: 0, //ใช้เพื่อดู Process การ Upload
+      uploadValue: [], //ใช้เพื่อดู Process การ Upload
       filesMetadata: [], //ใช้เพื่อรับข้อมูล Metadata จาก Firebase
       rows: [], //ใช้วาด DataTable
     };
@@ -182,7 +182,6 @@ class App extends Component {
         databaseRef.push({
           metadataFile
         });
-
       });
     })
   }
@@ -191,7 +190,6 @@ class App extends Component {
   render() {
 
     const { rows, filesMetadata } = this.state;
-
     var typeAy = ['image/*'];
 
     return (
@@ -210,7 +208,7 @@ class App extends Component {
         <div className="Margin-25">
 
           <FilePond allowMultiple={false} allowFileTypeValidation={true} allowDrop={true} acceptedFileTypes={typeAy}
-            maxFiles={5}
+            maxFiles={7}
             ref={ref => this.pond = ref}
             server={{ process: this.handleProcessing.bind(this) }}
             oninit={() => this.handleInit()}

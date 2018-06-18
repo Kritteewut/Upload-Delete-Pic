@@ -6,6 +6,10 @@ npm install need
 
 **	npm install filepond-plugin-image-preview	**
 
+**  npm install filepond-plugin-file-validate-type  **
+
 **	npm install firebase --save		**
 
 **	npm install bulma --save		**
+
+
